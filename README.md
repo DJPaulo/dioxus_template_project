@@ -92,7 +92,7 @@ project/
 1. Set required environment variables:
    - `RUST_SERVER_URL` — server bind address (eg. '127.0.0.1:3000')
    - `RUST_CLIENT_URL` — client bind address (eg. 'https://127.0.0.1:8080')
-   - `RUST_DB_PATH` — path for sqlite DB (eg. 'C:\db_data\')
+   - `RUST_DB_PATH` — path for sqlite DB (eg. 'C:\db_data\\')
    - `RUST_ADMIN_EMAIL` — admin user's email address (eg. 'initial_admin@email.com')
    - `RUST_ADMIN_PASSWORD` — admin user's temporary password which has to be changed at first login (eg. 'Rust1s@wesome')
 
@@ -120,5 +120,5 @@ project/
 
 4. Log into the application using the initial admin credentials and provide a new password
 
-5. In the user maintenance section, add a new admin and delete the initial admin (recommended once custom emailing code has been set up)
+5. In the user maintenance section, add a new admin and delete the initial admin (recommended once custom emailing code has been set up to send password reset link)
 
