@@ -4,7 +4,7 @@ asset_dir = "assets"
 [web.app]
 
 # HTML title tag content
-title = "HSQ Dioxus Project"
+title = "Fullstack Dioxus Project"
 
 # include `assets` in web platform
 [web.resource]

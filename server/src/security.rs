@@ -98,6 +98,12 @@ pub fn generate_reset_token() -> String {
 }
 
 
+// Email the reset password link to the user
+//pub async fn send_reset_link(email: &str, link: &str) -> Result<bool, Error> {
+    //TODO: Implement function 
+//}
+
+
 //-------------------------------------------------------------
 // Unit tests
 //-------------------------------------------------------------
@@ -126,7 +132,3 @@ mod tests {
 }
 
 
-// Email the reset password link to the user
-//pub async fn send_reset_link(email: &str, link: &str) -> Result<bool, Error> {
-    //TODO: Implement function 
-//}

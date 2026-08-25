@@ -51,14 +51,7 @@ enum Route {
     #[route("/user/forgot_password")]
     UserForgotPasswordPage {},
 
-//    #[route("/dashboard")]
-//    Dashboard {},
 
-//    #[route("/admin")]
-//    AdminPanel {},
-
-//    #[route("/admin/users")]
-//    UserManagement {},
 }
 
 
