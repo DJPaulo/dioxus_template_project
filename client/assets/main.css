@@ -6,6 +6,38 @@ body {
     margin: 20px;
 }
 
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;           /* sits above the page */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;    /* intercept clicks */
+}
+
+.modal {
+    background-color: #0f1116;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    z-index: 1000;          /* sits above the backdrop */
+}
+
 #hero {
     margin: 0;
     display: flex;
@@ -16,11 +48,20 @@ body {
 
 #links {
     width: 400px;
-    text-align: left;
+    text-align: center;
     font-size: x-large;
     color: white;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    margin-top: 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#links link {
+    border: white 1px solid;
 }
 
 #links a {
@@ -36,6 +77,10 @@ body {
 #links a:hover {
     background-color: #1f1f1f;
     cursor: pointer;
+}
+
+#links a:focus {
+    background-color: #1f1f1f;
 }
 
 #header {
@@ -60,13 +105,153 @@ body {
     color: #91a4d2;
 }
 
-/* Blog page */
-#blog {
-    margin-top: 50px;
-  }
-  
-#blog a {
+#navbar span {
     color: #ffffff;
-    margin-top: 50px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    align-self: center;
 }
 
+#navbar button {
+    color: #ffffff;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#navbar button:hover {
+    cursor: pointer;
+    color: #91a4d2;
+}
+
+#add-new-button {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#add-new-button:hover {
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+#add-new-button:focus {
+    background-color: #1f1f1f;
+}
+
+#table-button {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#table-button:hover {
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+#table-button:focus {
+    background-color: #1f1f1f;
+}
+
+#page-button {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#page-button:hover {
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+#page-button:focus {
+    background-color: #1f1f1f;
+}
+
+#input-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 26rem;
+    margin-top: 1rem;
+}
+
+#input-rows table tbody tr td {
+    padding: 0.5rem 0.5rem;
+    color: #f3f4f6;
+    vertical-align: middle;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    color: #d1d5db;
+    align-items: center;
+    text-align: right;
+    padding: 5px;
+    min-width: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    table-layout: fixed;
+}
+
+th {
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid #4b5563;
+    color: #d1d5db;
+}
+
+tr {
+    border-bottom: 1px solid #2f3747;
+}
+
+td {
+    padding: 0.5rem 0.5rem;
+    color: #f3f4f6;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #1f2937;
+}
+
+input {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border: 1px solid #4b5563;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+}
+
+select {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    border: 1px solid #4b5563;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+}
+
+select:hover {
+    cursor: pointer;
+    border-color: #9ca3af;
+}

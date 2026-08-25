@@ -3,3 +3,8 @@ name = "shared"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+time = { version = "0.3.54", features = ["serde"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.151" }
+anyhow = { version = "1.0.104" }

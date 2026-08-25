@@ -5,3 +5,20 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[dependencies]
+tokio = { version = "1.53", features = ["full"] }
+anyhow = { version = "1.0.104" }
+axum = { version = "0.8.9" }
+
+tower-http = { version = "0.7", features = ["cors"] }
+tower-cookies = { version = "0.11" }
+argon2 = { version = "0.5" }
+secrecy = { version = "0.10" }
+hex = { version = "0.4" }
+sha2 = { version = "0.11" }
+rand = { version = "0.8" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.151" }
+sqlx = { version = "0.9.0", features = ["runtime-tokio", "sqlite"] }
+uuid = { version = "1.24.0", features = ["v4"] }
+shared = { path = "../shared" }
