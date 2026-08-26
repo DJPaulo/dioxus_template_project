@@ -13,7 +13,7 @@ The template is split into two independent packages:
 - **server** — an Axum HTTP API with session‑based authentication
 - **shared** — common types used by both packages (e.g., `User`, `LoginRequest`)
 
-This structure mirrors real‑world full‑stack Rust deployments and keeps concerns cleanly separated.
+This structure keeps concerns cleanly separated.
 
 ---
 
@@ -35,7 +35,7 @@ This structure mirrors real‑world full‑stack Rust deployments and keeps conc
 ### **Backend**
 - Axum router with modular handlers
 - SQLite database using SQLx
-- Database initialization and migration logic
+- Database initialization logic
 - Environment‑driven configuration (`RUST_SERVER_URL`, etc.)
 - Basic unit tests for core logic
 
@@ -92,7 +92,7 @@ project/
 1. Set required environment variables:
    - `RUST_SERVER_URL` — server bind address (eg. '127.0.0.1:3000')
    - `RUST_CLIENT_URL` — client bind address (eg. 'https://127.0.0.1:8080')
-   - `RUST_DB_PATH` — path for sqlite DB (eg. 'C:\db_data\\')
+   - `RUST_DB_PATH` — path for the default sqlite users.db file (eg. 'C:\db_data\\')
    - `RUST_ADMIN_EMAIL` — admin user's email address (eg. 'initial_admin@email.com')
    - `RUST_ADMIN_PASSWORD` — admin user's temporary password which has to be changed at first login (eg. 'Rust1s@wesome')
 
